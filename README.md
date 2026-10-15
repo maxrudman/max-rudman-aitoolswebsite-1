@@ -6,10 +6,10 @@ A personal portfolio website, hosted with GitHub Pages. Plain HTML/CSS with a ti
 
 | File | Purpose |
 | --- | --- |
-| `index.html` | **Home** tab: introduction, at-a-glance numbers, an overview with links into the other tabs, and interests |
+| `index.html` | **Home** tab: introduction, at-a-glance numbers, an overview with links into the other tabs, skills, and interests |
 | `leadership.html` | **Leadership** tab: on-campus roles (Undergraduate Assembly, University Senate, Dean's Advisory Board, Greek life) |
 | `experience.html` | **Experience** tab: off-campus roles (Ethan for Kansas, Camp Sabra, FJC Cornerstone, CommunityAmerica) |
-| `academics.html` | **Academics** tab: education, five expandable academic projects, and skills |
+| `academics.html` | **Academics** tab: education and GPA beside the intro, then five expandable academic projects |
 | `contact.html` | **Contact** tab: email, LinkedIn, and resume download |
 | `styles.css` | Layout, typography, colors, mobile responsiveness. Colors and fonts are variables at the top of the file. |
 | `script.js` | Mobile menu, scroll effects, "Expand all" for projects, and opening a project when linked to directly |
