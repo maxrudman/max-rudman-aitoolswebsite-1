@@ -326,6 +326,14 @@ a:hover { color: var(--gold); }
 .project-heading { flex: 1; display: flex; flex-direction: column; }
 .project-title { font-family: var(--serif); font-size: 1.2rem; font-weight: 600; color: var(--navy); line-height: 1.3; }
 .project-meta { font-size: .9rem; color: var(--muted); }
+.project-methods { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
+.method {
+  padding: 3px 10px; border-radius: 999px; font-size: .8rem; font-weight: 500; line-height: 1.5;
+  background: var(--paper-alt); color: var(--navy-2); border: 1px solid var(--line);
+}
+.project[open] .method { background: var(--white); border-color: rgba(138, 106, 20, .35); }
+.project summary { align-items: flex-start; }
+.project-num, .project-icon { margin-top: 2px; }
 .project-icon {
   flex: none; width: 32px; height: 32px; border-radius: 50%; position: relative;
   background: var(--paper-alt); transition: transform .25s, background .2s;
@@ -339,7 +347,7 @@ a:hover { color: var(--gold); }
 .project[open] .project-icon::before { background: var(--white); }
 .project[open] .project-icon::after { transform: translate(-50%, -50%) rotate(0deg); background: var(--white); }
 .project-body { padding: 0 20px 20px calc(20px + 1.6em + 16px); }
-.project-body p { margin-bottom: 14px; }
+.project-body p { margin-bottom: 0; }
 .project[open] .project-body { animation: project-open .3s ease-out; }
 @keyframes project-open { from { opacity: 0; transform: translateY(-6px); } to { opacity: 1; transform: none; } }
 @media (max-width: 560px) { .project-body { padding-left: 20px; } }
