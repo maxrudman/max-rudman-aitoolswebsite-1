@@ -67,19 +67,19 @@
     </section>
 
     <!-- ============ PROJECTS ============
-         To fill in a project, replace the placeholder text inside one <details> block:
-           - project-title: the project's name
-           - project-meta:  course name and semester (e.g. "SOCI 3010 · Spring 2026")
-           - project-body:  a short summary of the work (question, method, finding)
-           - tags:          skills or methods used
-         To add a sixth project, copy a whole <details> ... </details> block and
+         Each project is one <details> block:
+           - project-title:   the project's name           (always visible)
+           - project-meta:    the class it was for          (always visible)
+           - project-methods: one <span class="method"> per method or tool (always visible)
+           - project-body:    the description               (shown after clicking)
+         To add a project, copy a whole <details> ... </details> block and
          change its id and number. -->
     <section class="section" id="projects" aria-labelledby="projects-title">
       <div class="container narrow">
         <p class="section-kicker">Selected work</p>
         <h2 id="projects-title">Academic projects</h2>
         <div class="projects-head">
-          <p class="muted">Select a project title to read a summary of the work.</p>
+          <p class="muted">Select a project to read a summary of the work.</p>
           <button class="text-btn" type="button" id="toggle-projects" hidden>Expand all</button>
         </div>
 
@@ -88,14 +88,14 @@
             <summary>
               <span class="project-num" aria-hidden="true">01</span>
               <span class="project-heading">
-                <span class="project-title">Project title</span>
-                <span class="project-meta">Course &middot; Semester</span>
+                <span class="project-title">Hormonal Contraceptive Access Policy in Kansas</span>
+                <span class="project-meta">Activism and Lawmaking</span>
+                <span class="project-methods"><span class="sr-only">Methods: </span><span class="method">Policy research</span><span class="method">Legislative history</span><span class="method">Advocacy strategy</span><span class="method">Coalition-building</span></span>
               </span>
               <span class="project-icon" aria-hidden="true"></span>
             </summary>
             <div class="project-body">
-              <p>Summary coming soon: the question this project asked, how I approached it, and what I found.</p>
-              <ul class="tags"><li>Skill or method</li></ul>
+              <p>I independently researched barriers to hormonal contraceptive access in Kansas, analyzing the state&rsquo;s healthcare infrastructure, legislative history, and political landscape to identify obstacles to reform and opportunities for bipartisan support. Based on my findings, I developed a five-year, $1.25 million advocacy strategy to expand pharmacists&rsquo; prescribing authority through grassroots mobilization, strategic messaging, coalition-building, and legislative lobbying.</p>
             </div>
           </details>
 
@@ -103,14 +103,14 @@
             <summary>
               <span class="project-num" aria-hidden="true">02</span>
               <span class="project-heading">
-                <span class="project-title">Project title</span>
-                <span class="project-meta">Course &middot; Semester</span>
+                <span class="project-title">Nuance in Roman Adultery Law</span>
+                <span class="project-meta">Roman Family Law</span>
+                <span class="project-methods"><span class="sr-only">Methods: </span><span class="method">Legal-historical analysis</span><span class="method">Primary-source research</span><span class="method">Legal argument</span></span>
               </span>
               <span class="project-icon" aria-hidden="true"></span>
             </summary>
             <div class="project-body">
-              <p>Summary coming soon: the question this project asked, how I approached it, and what I found.</p>
-              <ul class="tags"><li>Skill or method</li></ul>
+              <p>I conducted a legal-historical analysis of the <i lang="la">lex Iulia de adulteriis coercendis</i>, an Augustan law that transformed adultery from a private family matter into a state-prosecuted offense. Examining Roman legal texts, imperial rescripts, and juristic interpretations, I argued that the law sought to channel private vengeance into formal legal proceedings while reinforcing patriarchal authority, marital legitimacy, and legal distinctions between acts of passion and criminal homicide.</p>
             </div>
           </details>
 
@@ -118,14 +118,14 @@
             <summary>
               <span class="project-num" aria-hidden="true">03</span>
               <span class="project-heading">
-                <span class="project-title">Project title</span>
-                <span class="project-meta">Course &middot; Semester</span>
+                <span class="project-title">Protestants and the Protestant Work Ethic</span>
+                <span class="project-meta">Social Statistics</span>
+                <span class="project-methods"><span class="sr-only">Methods: </span><span class="method">R / RStudio</span><span class="method">Regression analysis</span><span class="method">ANOVA</span><span class="method">Survey data (GSS)</span></span>
               </span>
               <span class="project-icon" aria-hidden="true"></span>
             </summary>
             <div class="project-body">
-              <p>Summary coming soon: the question this project asked, how I approached it, and what I found.</p>
-              <ul class="tags"><li>Skill or method</li></ul>
+              <p>I conducted an independent quantitative study testing whether Protestant religious identity is associated with higher occupational prestige, drawing on Max Weber&rsquo;s Protestant Work Ethic theory. Using R, I analyzed 2,148 responses from the 2016 General Social Survey through linear and multiple regression models, controlling for race and paternal occupational prestige, and compared model fit using ANOVA. I found no statistically significant association between Protestant identity and occupational prestige, while both control variables were significant predictors.</p>
             </div>
           </details>
 
@@ -133,14 +133,14 @@
             <summary>
               <span class="project-num" aria-hidden="true">04</span>
               <span class="project-heading">
-                <span class="project-title">Project title</span>
-                <span class="project-meta">Course &middot; Semester</span>
+                <span class="project-title">Somali Food Crisis: United Nations Intervention Proposal</span>
+                <span class="project-meta">Engaging the United Nations</span>
+                <span class="project-methods"><span class="sr-only">Methods: </span><span class="method">Humanitarian policy analysis</span><span class="method">International organizations</span><span class="method">Policy proposal</span></span>
               </span>
               <span class="project-icon" aria-hidden="true"></span>
             </summary>
             <div class="project-body">
-              <p>Summary coming soon: the question this project asked, how I approached it, and what I found.</p>
-              <ul class="tags"><li>Skill or method</li></ul>
+              <p>I researched Somalia&rsquo;s 2025&ndash;2026 drought and its humanitarian consequences, analyzing food insecurity, internal displacement, and the effectiveness of existing UN interventions. After identifying critical gaps in humanitarian funding, resource allocation, and displaced-person protection, I developed a three-pronged intervention strategy recommending expanded UN funding, anticipatory drought relief through the Food and Agriculture Organization, and a UNHCR-led protected movement system for displaced Somalis.</p>
             </div>
           </details>
 
@@ -148,14 +148,14 @@
             <summary>
               <span class="project-num" aria-hidden="true">05</span>
               <span class="project-heading">
-                <span class="project-title">Project title</span>
-                <span class="project-meta">Course &middot; Semester</span>
+                <span class="project-title">Influence of Classroom Technology Policy on College Student Engagement</span>
+                <span class="project-meta">Introduction to Research Design</span>
+                <span class="project-methods"><span class="sr-only">Methods: </span><span class="method">Mixed-methods design</span><span class="method">Survey design</span><span class="method">Interviews</span><span class="method">Statistical testing</span><span class="method">Team project</span></span>
               </span>
               <span class="project-icon" aria-hidden="true"></span>
             </summary>
             <div class="project-body">
-              <p>Summary coming soon: the question this project asked, how I approached it, and what I found.</p>
-              <ul class="tags"><li>Skill or method</li></ul>
+              <p>I collaborated with four students to develop a mixed-methods research proposal examining the relationship between classroom technology restrictions and undergraduate engagement at Tulane University. We designed a semester-long study combining quantitative Likert-scale surveys and qualitative interviews with students and professors, accounting for differences in class size, subject, and classroom dynamics. Our proposed analysis incorporated t-tests, chi-squared tests, and qualitative thematic analysis to evaluate engagement patterns across classroom technology policies.</p>
             </div>
           </details>
         </div>

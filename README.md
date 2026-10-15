@@ -9,7 +9,7 @@ A personal portfolio website, hosted with GitHub Pages. Plain HTML/CSS with a ti
 | `index.html` | **Home** tab: introduction, at-a-glance numbers, an overview with links into the other tabs, and interests |
 | `leadership.html` | **Leadership** tab: on-campus roles (Undergraduate Assembly, University Senate, Dean's Advisory Board, Greek life) |
 | `experience.html` | **Experience** tab: off-campus roles (Ethan for Kansas, Camp Sabra, FJC Cornerstone, CommunityAmerica) |
-| `academics.html` | **Academics** tab: education, five expandable project slots, and skills |
+| `academics.html` | **Academics** tab: education, five expandable academic projects, and skills |
 | `contact.html` | **Contact** tab: email, LinkedIn, and resume download |
 | `styles.css` | Layout, typography, colors, mobile responsiveness. Colors and fonts are variables at the top of the file. |
 | `script.js` | Mobile menu, scroll effects, "Expand all" for projects, and opening a project when linked to directly |
@@ -27,14 +27,13 @@ update the `<ul class="nav-links">` and `<ul class="footer-links">` lists in all
 3. Choose the `main` branch and the `/ (root)` folder, then click **Save**.
 4. After a minute or two, the site will be live at `https://maxrudman.github.io/max-rudman-aitoolswebsite-1/`.
 
-## Filling in an academic project
+## Editing an academic project
 
-In `academics.html`, find the `<details class="project">` blocks. In each one, replace:
+In `academics.html`, each project is a `<details class="project">` block:
 
-- `Project title` with the project's name
-- `Course &middot; Semester` with the course and term
-- the "Summary coming soon" paragraph with a few sentences about the work
-- `Skill or method` with tags (add more `<li>` items as needed)
+- `project-title` and `project-meta` (the class) are always visible
+- each `<span class="method">` is a method/tool tag shown under the title
+- the paragraph in `project-body` is the description, shown after clicking
 
 Any project can be linked to directly, e.g. `academics.html#project-2`, and it opens automatically.
 
