@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600;8..60,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=4">
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -37,30 +37,18 @@
 
   <main id="main">
     <section class="page-hero">
-      <div class="container narrow">
-        <p class="eyebrow">Academics &middot; Tulane University</p>
-        <h1>Studying how society is organized</h1>
-        <p class="lead">Sociology, political science, and economics each look at the same question from a different angle: how people organize themselves, and what happens when the rules change. That question is also at the heart of law.</p>
-        <nav class="jump-links" aria-label="On this page">
-          <span>On this page:</span>
-          <a href="#education">Education</a>
-          <a href="#projects">Projects</a>
-          <a href="#skills">Skills</a>
-        </nav>
-      </div>
-    </section>
-
-    <!-- ============ EDUCATION ============ -->
-    <section class="section section-alt" id="education" aria-labelledby="education-title">
-      <div class="container narrow">
-        <p class="section-kicker">Education</p>
-        <div class="edu-card">
-          <div>
-            <h2 id="education-title">Tulane University</h2>
-            <p class="edu-degree">B.A. in Sociology</p>
-            <p>Minors in Political Science and Economics</p>
-            <p class="edu-meta">New Orleans, LA &middot; 2023 &ndash; Present</p>
-          </div>
+      <div class="container academics-hero">
+        <div>
+          <p class="eyebrow">Academics &middot; Tulane University</p>
+          <h1>Studying how society is organized</h1>
+          <p class="lead">Sociology, political science, and economics each look at the same question from a different angle: how people organize themselves, and what happens when the rules change. That question is also at the heart of law.</p>
+        </div>
+        <div class="edu-card" id="education">
+          <p class="section-kicker">Education</p>
+          <h2>Tulane University</h2>
+          <p class="edu-degree">B.A. in Sociology</p>
+          <p>Minors in Political Science and Economics</p>
+          <p class="edu-meta">New Orleans, LA &middot; 2023 &ndash; Present</p>
           <p class="edu-gpa"><span>3.88</span> GPA</p>
         </div>
       </div>
@@ -74,7 +62,7 @@
            - project-body:    the description               (shown after clicking)
          To add a project, copy a whole <details> ... </details> block and
          change its id and number. -->
-    <section class="section" id="projects" aria-labelledby="projects-title">
+    <section class="section section-alt" id="projects" aria-labelledby="projects-title">
       <div class="container narrow">
         <p class="section-kicker">Selected work</p>
         <h2 id="projects-title">Academic projects</h2>
@@ -90,12 +78,13 @@
               <span class="project-heading">
                 <span class="project-title">Hormonal Contraceptive Access Policy in Kansas</span>
                 <span class="project-meta">Activism and Lawmaking</span>
-                <span class="project-methods"><span class="sr-only">Methods: </span><span class="method">Policy research</span><span class="method">Legislative history</span><span class="method">Advocacy strategy</span><span class="method">Coalition-building</span></span>
+                <span class="project-methods"><span class="sr-only">Methods: </span> <span class="method">Policy research</span> <span class="method">Legislative history</span> <span class="method">Advocacy strategy</span> <span class="method">Coalition-building</span></span>
               </span>
               <span class="project-icon" aria-hidden="true"></span>
             </summary>
             <div class="project-body">
-              <p>I independently researched barriers to hormonal contraceptive access in Kansas, analyzing the state&rsquo;s healthcare infrastructure, legislative history, and political landscape to identify obstacles to reform and opportunities for bipartisan support. Based on my findings, I developed a five-year, $1.25 million advocacy strategy to expand pharmacists&rsquo; prescribing authority through grassroots mobilization, strategic messaging, coalition-building, and legislative lobbying.</p>
+              <p>I independently researched barriers to hormonal contraceptive access in Kansas, analyzing the state&rsquo;s <strong>healthcare infrastructure, legislative history, and political landscape</strong> to identify obstacles to reform and opportunities for bipartisan support.</p>
+              <p>Based on my findings, I developed a <strong>five-year, $1.25 million advocacy strategy</strong> to <strong>expand pharmacists&rsquo; prescribing authority</strong> through grassroots mobilization, strategic messaging, coalition-building, and legislative lobbying.</p>
             </div>
           </details>
 
@@ -105,12 +94,13 @@
               <span class="project-heading">
                 <span class="project-title">Nuance in Roman Adultery Law</span>
                 <span class="project-meta">Roman Family Law</span>
-                <span class="project-methods"><span class="sr-only">Methods: </span><span class="method">Legal-historical analysis</span><span class="method">Primary-source research</span><span class="method">Legal argument</span></span>
+                <span class="project-methods"><span class="sr-only">Methods: </span> <span class="method">Legal-historical analysis</span> <span class="method">Primary-source research</span> <span class="method">Legal argument</span></span>
               </span>
               <span class="project-icon" aria-hidden="true"></span>
             </summary>
             <div class="project-body">
-              <p>I conducted a legal-historical analysis of the <i lang="la">lex Iulia de adulteriis coercendis</i>, an Augustan law that transformed adultery from a private family matter into a state-prosecuted offense. Examining Roman legal texts, imperial rescripts, and juristic interpretations, I argued that the law sought to channel private vengeance into formal legal proceedings while reinforcing patriarchal authority, marital legitimacy, and legal distinctions between acts of passion and criminal homicide.</p>
+              <p>I conducted a legal-historical analysis of the <i lang="la">lex Iulia de adulteriis coercendis</i>, an Augustan law that <strong>transformed adultery from a private family matter into a state-prosecuted offense</strong>.</p>
+              <p>Examining Roman legal texts, imperial rescripts, and juristic interpretations, I argued that the law sought to <strong>channel private vengeance into formal legal proceedings</strong> while reinforcing patriarchal authority, marital legitimacy, and legal distinctions between acts of passion and criminal homicide.</p>
             </div>
           </details>
 
@@ -120,12 +110,14 @@
               <span class="project-heading">
                 <span class="project-title">Protestants and the Protestant Work Ethic</span>
                 <span class="project-meta">Social Statistics</span>
-                <span class="project-methods"><span class="sr-only">Methods: </span><span class="method">R / RStudio</span><span class="method">Regression analysis</span><span class="method">ANOVA</span><span class="method">Survey data (GSS)</span></span>
+                <span class="project-methods"><span class="sr-only">Methods: </span> <span class="method">R / RStudio</span> <span class="method">Regression analysis</span> <span class="method">ANOVA</span> <span class="method">Survey data (GSS)</span></span>
               </span>
               <span class="project-icon" aria-hidden="true"></span>
             </summary>
             <div class="project-body">
-              <p>I conducted an independent quantitative study testing whether Protestant religious identity is associated with higher occupational prestige, drawing on Max Weber&rsquo;s Protestant Work Ethic theory. Using R, I analyzed 2,148 responses from the 2016 General Social Survey through linear and multiple regression models, controlling for race and paternal occupational prestige, and compared model fit using ANOVA. I found no statistically significant association between Protestant identity and occupational prestige, while both control variables were significant predictors.</p>
+              <p>I conducted an independent quantitative study testing <strong>whether Protestant religious identity is associated with higher occupational prestige</strong>, drawing on Max Weber&rsquo;s Protestant Work Ethic theory.</p>
+              <p>Using R, I analyzed <strong>2,148 responses from the 2016 General Social Survey</strong> through linear and multiple regression models, controlling for race and paternal occupational prestige, and compared model fit using ANOVA.</p>
+              <p class="project-finding">I found <strong>no statistically significant association</strong> between Protestant identity and occupational prestige, while both control variables were significant predictors.</p>
             </div>
           </details>
 
@@ -135,12 +127,18 @@
               <span class="project-heading">
                 <span class="project-title">Somali Food Crisis: United Nations Intervention Proposal</span>
                 <span class="project-meta">Engaging the United Nations</span>
-                <span class="project-methods"><span class="sr-only">Methods: </span><span class="method">Humanitarian policy analysis</span><span class="method">International organizations</span><span class="method">Policy proposal</span></span>
+                <span class="project-methods"><span class="sr-only">Methods: </span> <span class="method">Humanitarian policy analysis</span> <span class="method">International organizations</span> <span class="method">Policy proposal</span></span>
               </span>
               <span class="project-icon" aria-hidden="true"></span>
             </summary>
             <div class="project-body">
-              <p>I researched Somalia&rsquo;s 2025&ndash;2026 drought and its humanitarian consequences, analyzing food insecurity, internal displacement, and the effectiveness of existing UN interventions. After identifying critical gaps in humanitarian funding, resource allocation, and displaced-person protection, I developed a three-pronged intervention strategy recommending expanded UN funding, anticipatory drought relief through the Food and Agriculture Organization, and a UNHCR-led protected movement system for displaced Somalis.</p>
+              <p>I researched Somalia&rsquo;s 2025&ndash;2026 drought and its humanitarian consequences, analyzing <strong>food insecurity, internal displacement, and the effectiveness of existing UN interventions</strong>.</p>
+              <p>After identifying critical gaps in humanitarian funding, resource allocation, and displaced-person protection, I developed a <strong>three-pronged intervention strategy</strong> recommending:</p>
+              <ol class="prongs">
+                <li>expanded UN funding,</li>
+                <li>anticipatory drought relief through the Food and Agriculture Organization, and</li>
+                <li>a UNHCR-led protected movement system for displaced Somalis.</li>
+              </ol>
             </div>
           </details>
 
@@ -150,31 +148,17 @@
               <span class="project-heading">
                 <span class="project-title">Influence of Classroom Technology Policy on College Student Engagement</span>
                 <span class="project-meta">Introduction to Research Design</span>
-                <span class="project-methods"><span class="sr-only">Methods: </span><span class="method">Mixed-methods design</span><span class="method">Survey design</span><span class="method">Interviews</span><span class="method">Statistical testing</span><span class="method">Team project</span></span>
+                <span class="project-methods"><span class="sr-only">Methods: </span> <span class="method">Mixed-methods design</span> <span class="method">Survey design</span> <span class="method">Interviews</span> <span class="method">Statistical testing</span> <span class="method">Team project</span></span>
               </span>
               <span class="project-icon" aria-hidden="true"></span>
             </summary>
             <div class="project-body">
-              <p>I collaborated with four students to develop a mixed-methods research proposal examining the relationship between classroom technology restrictions and undergraduate engagement at Tulane University. We designed a semester-long study combining quantitative Likert-scale surveys and qualitative interviews with students and professors, accounting for differences in class size, subject, and classroom dynamics. Our proposed analysis incorporated t-tests, chi-squared tests, and qualitative thematic analysis to evaluate engagement patterns across classroom technology policies.</p>
+              <p>I collaborated with four students to develop a <strong>mixed-methods research proposal</strong> examining the relationship between classroom technology restrictions and undergraduate engagement at Tulane University.</p>
+              <p>We designed a <strong>semester-long study</strong> combining quantitative Likert-scale surveys and qualitative interviews with students and professors, accounting for differences in class size, subject, and classroom dynamics.</p>
+              <p>Our proposed analysis incorporated <strong>t-tests, chi-squared tests, and qualitative thematic analysis</strong> to evaluate engagement patterns across classroom technology policies.</p>
             </div>
           </details>
         </div>
-      </div>
-    </section>
-
-    <!-- ============ SKILLS ============ -->
-    <section class="section section-alt" id="skills" aria-labelledby="skills-title">
-      <div class="container narrow">
-        <p class="section-kicker">Skills</p>
-        <h2 id="skills-title">What I bring</h2>
-        <h3 class="skill-group">Professional</h3>
-        <ul class="tags">
-          <li>Leadership</li><li>Organization</li><li>Written communication</li><li>Verbal communication</li><li>Fundraising &amp; donor research</li><li>Stakeholder coordination</li>
-        </ul>
-        <h3 class="skill-group">Research &amp; tools</h3>
-        <ul class="tags">
-          <li>Statistical programming in R / RStudio</li><li>Microsoft Office (Word, Excel, PowerPoint, Outlook, Teams)</li><li>Google Workspace</li><li>Canva</li><li>Instagram &amp; TikTok content</li>
-        </ul>
       </div>
     </section>
 
@@ -198,6 +182,6 @@
     </div>
   </footer>
 
-  <script src="script.js" defer></script>
+  <script src="script.js?v=4" defer></script>
 </body>
 </html>
