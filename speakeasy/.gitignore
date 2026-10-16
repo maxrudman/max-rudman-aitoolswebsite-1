@@ -1,0 +1,9 @@
+node_modules/
+.next/
+next-env.d.ts
+*.tsbuildinfo
+src/generated/
+.env
+.env.local
+*.db
+*.db-journal

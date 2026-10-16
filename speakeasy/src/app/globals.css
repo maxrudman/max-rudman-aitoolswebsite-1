@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* One calm accent (teal) on warm neutrals. */
+@theme {
+  --color-accent: #0f766e;
+  --color-accent-hover: #115e59;
+  --color-accent-soft: #e6f4f1;
+  --color-accent-ring: #5eaaa0;
+  --color-ink: #1c2426;
+  --color-muted: #5f6b6d;
+  --color-line: #e5e7e4;
+  --color-canvas: #f7f7f5;
+  --color-surface: #ffffff;
+  --color-danger: #b42318;
+  --color-danger-soft: #fdecea;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --radius-card: 1.25rem;
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    background: var(--color-canvas);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  /* Visible, consistent keyboard focus everywhere (utilities can still override it). */
+  :focus-visible {
+    outline: 3px solid var(--color-accent-ring);
+    outline-offset: 2px;
+  }
+}
+
+/* Native <dialog> styling */
+dialog::backdrop { background: rgb(28 36 38 / 0.35); backdrop-filter: blur(2px); }
+dialog[open] { animation: pop-in 160ms ease-out; }
+
+@keyframes pop-in { from { opacity: 0; transform: translateY(6px) scale(0.98); } to { opacity: 1; transform: none; } }
+@keyframes fade-up { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: none; } }
+@keyframes rec-pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.35; } }
+
+.animate-fade-up { animation: fade-up 220ms ease-out both; }
+.animate-rec { animation: rec-pulse 1.2s ease-in-out infinite; }
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation-duration: 1ms !important; animation-iteration-count: 1 !important; transition-duration: 1ms !important; }
+}

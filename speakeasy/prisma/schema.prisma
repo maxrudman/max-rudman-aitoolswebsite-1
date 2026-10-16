@@ -1,0 +1,78 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "sqlite"
+}
+
+model User {
+  id           String   @id @default(cuid())
+  username     String   @unique
+  passwordHash String
+  createdAt    DateTime @default(now())
+
+  // Vocabulary preferences (set during onboarding, editable any time)
+  vocabLevel    String?
+  vocabField    String?
+  vocabAudience String?
+  onboarded     Boolean @default(false)
+
+  // Flashcard bookkeeping
+  cardsShown    Int @default(0) // total cards graded; drives the retired-review cadence
+  currentStreak Int @default(0) // consecutive correct answers
+  bestStreak    Int @default(0)
+
+  // Last audience used on the Practice page
+  practicePurpose String?
+  practiceRole    String?
+  practiceSpecs   String?
+
+  sessions Session[]
+  terms    Term[]
+  journal  JournalEntry[]
+}
+
+model Session {
+  id        String   @id // SHA-256 of the cookie token; the raw token is never stored
+  userId    String
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+model Term {
+  id         String    @id @default(cuid())
+  userId     String
+  word       String
+  wordKey    String // normalized form, used to prevent duplicates
+  definition String
+  example    String
+  box        Int       @default(0) // Leitner box 0-5
+  retired    Boolean   @default(false)
+  removed    Boolean   @default(false) // kept as a row so it is never generated again
+  seen       Boolean   @default(false)
+  timesRight Int       @default(0)
+  timesWrong Int       @default(0)
+  lastSeenAt DateTime?
+  createdAt  DateTime  @default(now())
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, wordKey])
+  @@index([userId, removed, retired])
+}
+
+model JournalEntry {
+  id        String   @id @default(cuid())
+  userId    String
+  prompt    String
+  response  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId, createdAt])
+}
